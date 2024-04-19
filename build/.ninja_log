@@ -1,5 +1,0 @@
-# ninja log v5
-1	597	7352501093292003	CMakeFiles/mlib_library.dir/src/lib.cpp.obj	541749a206f0dbc9
-598	644	7352501093874511	mlib_library.lib	7af8db348a73847b
-5	535	7352502170843254	CMakeFiles/mlib.dir/src/lib.cpp.obj	c024adf7fbb4767c
-535	582	7352502171306503	mlib.lib	d34bbb25e5d3c9f2

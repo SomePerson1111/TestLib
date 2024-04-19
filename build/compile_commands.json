@@ -1,7 +1,0 @@
-[
-{
-  "directory": "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build",
-  "command": "C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe   /TP -ID:\\Tmp\\CPP_WorkSpaces\\Cmake\\test_subprj\\include -ID:\\Tmp\\CPP_WorkSpaces\\Cmake\\test_subprj\\build\\_deps\\gridobject-src\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\mlib.dir\\src\\lib.cpp.obj /FdTARGET_COMPILE_PDB /FS -c D:\\Tmp\\CPP_WorkSpaces\\Cmake\\test_subprj\\src\\lib.cpp",
-  "file": "D:\\Tmp\\CPP_WorkSpaces\\Cmake\\test_subprj\\src\\lib.cpp"
-}
-]

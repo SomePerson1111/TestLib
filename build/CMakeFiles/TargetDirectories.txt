@@ -1,0 +1,11 @@
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/CMakeFiles/mlib.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/CMakeFiles/edit_cache.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/CMakeFiles/rebuild_cache.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/CMakeFiles/list_install_components.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/CMakeFiles/install.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/CMakeFiles/install/local.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-build/CMakeFiles/edit_cache.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-build/CMakeFiles/rebuild_cache.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-build/CMakeFiles/list_install_components.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-build/CMakeFiles/install.dir
+D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-build/CMakeFiles/install/local.dir

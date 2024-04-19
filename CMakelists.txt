@@ -1,12 +1,17 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(Library VERSION 0.0.2)
+project(mlib VERSION 0.0.2)
 
 set(SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/lib.cpp)
-set(HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/lib.h)
+set(HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/mlib/lib.h)
 
-add_library(mlib STATIC ${SOURCES})
-target_include_directories(mlib PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+add_library(mlib_headers INTERFACE)
+target_include_directories(mlib_headers INTERFACE
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+target_compile_features(mlib_headers INTERFACE cxx_std_14)
 
 include(cmake/CPM.cmake)
 CPMAddPackage("gh:IwM341/GridObject@1.0.1")
@@ -14,23 +19,27 @@ CPMAddPackage("gh:IwM341/GridObject@1.0.1")
 find_package(Grob)
 
 
-set_target_properties(mlib PROPERTIES
-                        CXX_STANDART 14
-                        CXX_STANDART_REQUIRED ON)
-
-target_link_libraries(mlib Grob::grob)
+target_link_libraries(mlib_headers INTERFACE Grob::grob)
 
 
+add_library(mlib::headers ALIAS mlib_headers)
 
-install(TARGETS mlib EXPORT libTargets 
-        LIBRARY  DESTINATION lib
-        ARCHIVE  DESTINATION lib
-        INCLUDES DESTINATION include/mlib) 
+add_library(mlib ${SOURCES})
+target_link_libraries(mlib PUBLIC mlib_headers)
 
-install(FILES  ${HEADERS} DESTINATION include/mlib)
+add_library(mlib::mlib ALIAS mlib)
 
 
-install(EXPORT libTargets
-        FILE mlibConfig.cmake
-        NAMESPACE Library::
-        DESTINATION lib/cmake/Library)
+
+install(DIRECTORY include/mlib DESTINATION include)
+install(TARGETS mlib_headers mlib EXPORT mlibConfig)
+install(EXPORT mlibConfig NAMESPACE mlib:: DESTINATION share/mlib/cmake)
+
+include(CMakePackageConfigHelpers)
+write_basic_package_version_file("${PROJECT_BINARY_DIR}/mlibConfigVersion.cmake"
+    VERSION
+        ${PROJECT_VERSION}
+    COMPATIBILITY
+        AnyNewerVersion
+)
+install(FILES "${PROJECT_BINARY_DIR}/mlibConfigVersion.cmake" DESTINATION share/mlib/cmake)

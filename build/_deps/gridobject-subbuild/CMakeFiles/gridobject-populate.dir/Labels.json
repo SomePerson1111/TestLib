@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/CMakeFiles/gridobject-populate"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/CMakeFiles/gridobject-populate.rule"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/CMakeFiles/gridobject-populate-complete.rule"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/gridobject-populate-prefix/src/gridobject-populate-stamp/gridobject-populate-build.rule"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/gridobject-populate-prefix/src/gridobject-populate-stamp/gridobject-populate-configure.rule"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/gridobject-populate-prefix/src/gridobject-populate-stamp/gridobject-populate-download.rule"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/gridobject-populate-prefix/src/gridobject-populate-stamp/gridobject-populate-install.rule"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/gridobject-populate-prefix/src/gridobject-populate-stamp/gridobject-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/gridobject-populate-prefix/src/gridobject-populate-stamp/gridobject-populate-patch.rule"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/gridobject-populate-prefix/src/gridobject-populate-stamp/gridobject-populate-test.rule"
+		},
+		{
+			"file" : "D:/Tmp/CPP_WorkSpaces/Cmake/test_subprj/build/_deps/gridobject-subbuild/gridobject-populate-prefix/src/gridobject-populate-stamp/gridobject-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"gridobject-populate"
+		],
+		"name" : "gridobject-populate"
+	}
+}

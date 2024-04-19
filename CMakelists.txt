@@ -1,0 +1,36 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(Library VERSION 0.0.2)
+
+set(SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/lib.cpp)
+set(HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/lib.h)
+
+add_library(mlib STATIC ${SOURCES})
+target_include_directories(mlib PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+include(cmake/CPM.cmake)
+CPMAddPackage("gh:IwM341/GridObject@1.0.1")
+
+find_package(Grob)
+
+
+set_target_properties(mlib PROPERTIES
+                        CXX_STANDART 14
+                        CXX_STANDART_REQUIRED ON)
+
+target_link_libraries(mlib Grob::grob)
+
+
+
+install(TARGETS mlib EXPORT libTargets 
+        LIBRARY  DESTINATION lib
+        ARCHIVE  DESTINATION lib
+        INCLUDES DESTINATION include/mlib) 
+
+install(FILES  ${HEADERS} DESTINATION include/mlib)
+
+
+install(EXPORT libTargets
+        FILE mlibConfig.cmake
+        NAMESPACE Library::
+        DESTINATION lib/cmake/Library)
